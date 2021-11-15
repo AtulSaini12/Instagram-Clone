@@ -13,7 +13,7 @@ import {
 
 function Header() {
   return (
-    <div>
+    <div className="border-b bg-white sticky top-0 z-60 shadow-sm">
       <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         <div className="relative hidden lg:inline-grid w-24 cursor-pointer ">
           <Image
@@ -48,7 +48,20 @@ function Header() {
           <HomeIcon className="navBtn" />
           <MenuIcon className="h-6 md:hidden cursor-pointer" />
 
-          <PaperAirplaneIcon className="navBtn" />
+          <div className="relative navBtn">
+            <PaperAirplaneIcon className="navBtn rotate-45" />
+            <div className="absolute -top-1 -right-2 text-xs w-5 h-5 bg-red-500 rounded-full flex items-center justify-center animate-pulse text-white">
+              2
+            </div>
+          </div>
+          <PlusCircleIcon className="navBtn" />
+          <UserGroupIcon className="navBtn" />
+          <HeartIcon className="navBtn" />
+          <img
+            src="https://t3.ftcdn.net/jpg/03/91/19/22/360_F_391192211_2w5pQpFV1aozYQhcIw3FqA35vuTxJKrB.jpg"
+            alt="profile-pic"
+            className="h-10 rounded-full cursor-pointer hover:animate-ping"
+          />
         </div>
       </div>
     </div>
